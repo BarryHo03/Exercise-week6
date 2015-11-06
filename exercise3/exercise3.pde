@@ -37,6 +37,9 @@ void draw()
     if(numbers_hps[i]>100){
       numbers_hps[i]=100;
     }
+    if(numbers_hps[i]<0){
+      numbers_hps[i]=0;
+    }
   }
   
   for(int i =0;i<numbers_hps.length;i++){
