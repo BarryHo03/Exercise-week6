@@ -30,12 +30,13 @@ void draw()
   }
   for(int i =0;i<numbers_hps.length;i++){
     if(numbers[24]>=50+i*80 && numbers[24]<=50+i*80+flower_danger.width){
-      numbers_hps[i]+=5;
-    }
-    else {
+      numbers_hps[i]+=10;
+    }else{
       numbers_hps[i]--;
-  }
-    
+    }
+    if(numbers_hps[i]>100){
+      numbers_hps[i]=100;
+    }
   }
   
   for(int i =0;i<numbers_hps.length;i++){
